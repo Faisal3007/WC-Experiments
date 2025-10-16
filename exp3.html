@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Book Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 70px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #343a40;
+            padding: 15px 30px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item .nav-link {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        /* Jumbotron */
+        .jumbotron {
+            background-color: #e9ecef;
+            padding: 60px 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 30px;
+        }
+
+        .jumbotron h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .jumbotron .btn {
+            padding: 10px 25px;
+            font-size: 18px;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        /* Grid (Row and Columns) */
+        .row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col-sm {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        /* Book Cards */
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+        /* Form */
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #343a40;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a class="navbar-brand" href="#">BookStore</a>
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+</nav>
+
+
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to the Book Store!</h1>
+    <p class="lead">Explore the latest collection of books online.</p>
+    <hr class="my-4">
+    <p>Shop anytime, anywhere.</p>
+</div>
+
+<!-- Grid for Book Cards -->
+<div class="container">
+    <h2>Popular Books</h2>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card">
+                <img src="https://fingerprintpublishing.com/cache/public/uploads/books/9788172345662.jpg-544x550.jpg" class="card-img-top" alt="Book 1">
+                <div class="card-body">
+                    <h5 class="card-title">The Power of your Subconsious Mind</h5>
+                    <p class="card-text">Author: Joseph Murphy</p>
+                    <button type="button" class="btn btn-success">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/71pLJc2bSeL._UF350,350_QL80_.jpg" class="card-img-top" alt="Book 2">
+                <div class="card-body">
+                    <h5 class="card-title">Rich Dad Poor Dad</h5>
+                    <p class="card-text">Author: Robert Kiyosaki</p>
+                    <button type="button" class="btn btn-success">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card">
+                <img src="https://99booksstore.in/cdn/shop/files/56.webp?v=1716624807&width=1800" class="card-img-top" alt="Book 3">
+                <div class="card-body">
+                    <h5 class="card-title">Atomic Habits</h5>
+                    <p class="card-text">Author: James Clear</p>
+                    <button type="button" class="btn btn-success">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form -->
+<div class="container">
+    <h2>Contact Us</h2>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1" class="form-label">Select Book</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>The Power of your Subconsious Mind</option>
+                <option>Atomic Habits</option>
+                <option>Rich Dad Poor Dad</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+</body>
+</html>

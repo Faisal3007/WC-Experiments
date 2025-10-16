@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AIKTC</title>
+<style>
+  body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .nav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .nav a:hover {
+    background-color: #dddddd;
+    color: black;
+  }
+
+  section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #aaa;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table, th, td {
+    border: 1px solid #333;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  form input[type=text], form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+  form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Anjuman-I-Islam's Kalsekar Technical Campus</h1>
+</div>
+
+<div class="nav">
+  <a href="#home">Home</a>
+  <a href="#department">Department</a>
+  <a href="#facility">Facility</a>
+  <a href="#contact">Contact Us</a>
+</div>
+
+<!-- Home Page -->
+<section id="home">
+  <h2>Welcome to AIKTC</h2>
+  <p>This is the official website of Anjuman-I-Islam's Kalsekar Technical Campus.</p>
+  <p>Our mission is to provide quality technical education.</p>
+  <p>Visit the <a href="#department">Department</a> page to know more about our departments.</p>
+</section>
+
+<!-- Department Page -->
+<section id="department">
+  <h2>Department of Computer Science & Engineering (AI ML)</h2>
+  <table>
+    <tr>
+      <th>Department</th>
+      <th>Faculty</th>
+      <th>Programs Offered</th>
+    </tr>
+    <tr>
+      <td>Computer Science & Engineering</td>
+      <td>Dr. John Doe</td>
+      <td>B.Tech, M.Tech (AI & ML)</td>
+    </tr>
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td>Prof. Jane Smith</td>
+      <td>B.Tech, M.Tech</td>
+    </tr>
+    <tr>
+      <td>Electrical Engineering</td>
+      <td>Dr. Alan Turing</td>
+      <td>B.Tech, M.Tech</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Facility Page -->
+<section id="facility">
+  <h2>Our Facilities</h2>
+  <h3>Laboratories</h3>
+  <ul>
+    <li>Computer Lab with latest systems</li>
+    <li>Electronics Lab</li>
+    <li>Mechanical Workshop</li>
+  </ul>
+  <h3>Library Resources</h3>
+  <ol>
+    <li>Technical Books</li>
+    <li>Research Journals</li>
+    <li>Digital Library Access</li>
+  </ol>
+</section>
+
+<!-- Contact Us Page -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Your email address" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+</body>
+</html>
